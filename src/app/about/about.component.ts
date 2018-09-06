@@ -9,6 +9,7 @@ export class AboutComponent implements OnInit {
   showElement : boolean = false;
   showElement2 : boolean = false;
   showElement3 : boolean = false;
+  gelery :boolean = false;
   constructor() { }
 
   ngOnInit() {
@@ -29,6 +30,9 @@ export class AboutComponent implements OnInit {
   myFunction3() {
 
     this.showElement3 = !this.showElement3 ;
+  }
+  myGelery() {
+    this.gelery = !this.gelery ;
   }
 
 

@@ -69,12 +69,12 @@
   <h1 style="text-align: center ; margin-top: 0px">Текст</h1>
   <P>В смысловой цельности текста отражаются те связи и зависимости, которые имеются в самой действительности (общественные
     события, явления природы, человек )
-    <br> Единство предмета речи — это тема высказывания. Тема — это смысловое ядро текста, конденсированное и обобщённое содержание
-    текста.
-    <br> Понятие «содержание высказывания» связано с категорией информативности речи и присуще только тексту. Оно сообщает читателю
-    индивидуальн
-    <br> о-авторское понимание отношений между явлениями, их значимости во всех сферах придают ему смысловую цельность. В большом
-    тексте ведущая тема распадается на ряд составляющих подтем; подтемы членятся на более дробные, на абзацы (микротемы).
+    <br> Единство предмета речи — это тема высказывания. Тема — это смысловое ядро текста, конденсированное и обобщённое
+    содержание текста.
+    <br> Понятие «содержание высказывания» связано с категорией информативности речи и присуще только тексту. Оно сообщает
+    читателю индивидуальн
+    <br> о-авторское понимание отношений между явлениями, их значимости во всех сферах придают ему смысловую цельность. В
+    большом тексте ведущая тема распадается на ряд составляющих подтем; подтемы членятся на более дробные, на абзацы (микротемы).
     <br> Завершённость высказывания связана со смысловой цельностью текста. Показателем законченности текста является возможность
     подобрать к нему заголовок, отр
     <br> Таким образом, из смысловой цельности текста вытекают следующие признаки текста:
@@ -85,4 +85,68 @@
     <br> К тексту можно подобрать заголовок;
     <br> Правильно оформленный текст обычно имеет начало и конец.</P>
   <br>
+</div>
+<div class="gContent" [class.noneGc]="gelery">
+  <div class="cross">
+    <img src="/images/cross.png" (click)="myGelery()">
+  </div>
+  <div class="photo">
+    <div class="carousel-container">
+      <div class="carousel my-carousel carousel--translate">
+        <input class="carousel__activator" type="radio" name="carousel" id="F" checked="checked" />
+        <input class="carousel__activator" type="radio" name="carousel" id="G" />
+        <input class="carousel__activator" type="radio" name="carousel" id="H" />
+        <input class="carousel__activator" type="radio" name="carousel" id="I" />
+        <input class="carousel__activator" type="radio" name="carousel" id="J" />
+        <div class="carousel__controls">
+          <label class="carousel__control carousel__control--backward" for="J"></label>
+          <label class="carousel__control carousel__control--forward" for="G"></label>
+        </div>
+        <div class="carousel__controls">
+          <label class="carousel__control carousel__control--backward" for="F"></label>
+          <label class="carousel__control carousel__control--forward" for="H"></label>
+        </div>
+        <div class="carousel__controls">
+          <label class="carousel__control carousel__control--backward" for="G"></label>
+          <label class="carousel__control carousel__control--forward" for="I"></label>
+        </div>
+        <div class="carousel__controls">
+          <label class="carousel__control carousel__control--backward" for="H"></label>
+          <label class="carousel__control carousel__control--forward" for="J"></label>
+        </div>
+        <div class="carousel__controls">
+          <label class="carousel__control carousel__control--backward" for="I"></label>
+          <label class="carousel__control carousel__control--forward" for="F"></label>
+        </div>
+        <div class="carousel__track">
+          <li class="carousel__slide">
+            <h1></h1>
+          </li>
+          <li class="carousel__slide" >
+            <h1></h1>
+          </li>
+          <li class="carousel__slide">
+            <h1></h1>
+          </li>
+          <li class="carousel__slide">
+            <h1></h1>
+          </li>
+          <li class="carousel__slide">
+            <h1></h1>
+          </li>
+        </div>
+        <div class="carousel__indicators">
+          <label class="carousel__indicator" for="F"></label>
+          <label class="carousel__indicator" for="G"></label>
+          <label class="carousel__indicator" for="H"></label>
+          <label class="carousel__indicator" for="I"></label>
+          <label class="carousel__indicator" for="J"></label>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="gelery" (click)="myGelery()" [class.noneGelery]="gelery">
+  <img src="/images/gelery.png">
 </div>
