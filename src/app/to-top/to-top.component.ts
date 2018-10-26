@@ -14,6 +14,7 @@ export class ToTopComponent {
   show: boolean = false;
 
   @HostListener("window:scroll", [])
+  
   onWindowScroll() {
 
     if (this.document.documentElement.scrollTop > 180) {
@@ -31,4 +32,3 @@ export class ToTopComponent {
 
 
   }
-

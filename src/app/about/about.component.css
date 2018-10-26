@@ -2,35 +2,6 @@
   text-decoration: none ;
   font-family:  'Arial Narrow', Arial, sans-serif
 }
-#general{
-  background-color: rgba(0, 0, 0, 0.788) ;
-  width: 100% ;
-  height: 100% ;
-  position: absolute;
-  margin-top: -50px ;
-  text-align: center ;
-  display: none;
-  text-decoration: none ;
-}
-
-.nom{
-  width: 50%;
-  height: 50%;
-  background-color: #fff ;
-  top : 25%;
-  left: 25% ;
-  position: relative ;
-}
-
-.none{
-  background-color: #fff;
-  width: 50px;
-  height: 50px ;
-  border-radius: 50% ;
-  position: absolute;
-  top: 20px;
-  right: 30px;
-}
 
 
 
@@ -65,6 +36,15 @@
   float: left;
   height: 500px;
 }
+.sectionX{
+  display: none ;
+  width: 220px;
+  float: left;
+}
+.sectionXtitle{
+  width: 100%;
+  float: left;
+}
 
 .face{
   height: 400px;
@@ -76,6 +56,18 @@
   background-image: url("images/wd.png");
   background-size: cover;
   background-position: center;
+}
+.face2{
+  display: none ;
+  height: 130px;
+  width: 130px;
+  border-radius: 50%;
+  background-color: green ;
+  margin-left: 5% ;
+  background-image: url("images/wd.png");
+  background-size: cover;
+  background-position: center;
+  float: left;
 }
 .gelery{
   background-color: rgb(10, 90, 50) ;
@@ -584,10 +576,8 @@ h1.titleh12{
   font-size: 500% ;
   margin-top: 80px;
 }
-.sectionX{
-  display: none ;
 
-}
+
 
 
 
@@ -685,7 +675,7 @@ h1.titleh12{
     box-shadow: 0px ; 
     border-radius:20px ;
     margin-left: 10%;
-    transition:  transform 20000ms, width 175ms , height 10000ms  ,border-radius 175ms , margin-left 300ms;
+    transition:  transform 200ms, width 175ms , height 100ms  ,border-radius 175ms , margin-left 300ms;
   }
   .section2{
     width: 100%;
@@ -707,20 +697,27 @@ h1.titleh12{
   }
   .wrapperopen{
     box-shadow: 0 0 0 ;
-    width: 90% ;
+    width: 92% ;
     transform: translate(0%, 0%);
-    margin-left: 5% ;
+    margin-left: 4% ;
     transition:  transform 500ms, margin-left 500ms , width 375ms, height 275ms 100ms ,border-radius 375ms  ;
+    z-index: 993;
   }
   .wrapperope{
     box-shadow: 0 0 0 ;
-    width: 90% ;
+    width: 92% ;
     transform: translate(0%, 0%);
+    margin-left: 4% ;
+    transition:  transform 500ms, margin-left 500ms , width 375ms, height 275ms 100ms ,border-radius 375ms  ;
+    z-index: 992;
   }
   .wrapperop{
     box-shadow: 0 0 0 ;
-    width: 90% ;
+    width: 92% ;
     transform: translate(0%, 0%);
+    margin-left: 4% ;
+    transition:  transform 500ms, margin-left 500ms , width 375ms, height 275ms 100ms ,border-radius 375ms  ;
+    z-index: 991;
   }
   
 
@@ -741,5 +738,50 @@ h1.titleh12{
   .section1{
     display: none ;
   }
+  .face2{
+    display: block ;
+  }
+  .sectionX{
+    width: 100%;
+  }
+  .sectionXtitle{
+    width: 220px;
+  }
 
+  .sectionX h1{
+    margin-top: 0px ;
+  }
+
+}
+@media screen and (max-width: 410px){
+  .face2{
+    width: 100px;
+    height: 100px;
+  }
+  .sectionXtitle h1{
+    font-size: 400% ;
+
+  }
+  .sectionXtitle h3{
+    font-size: 150% ;
+  }
+  .sectionXtitle{
+    width: 180px ;
+  }
+}
+@media screen and (max-width: 335px){
+  .face2{
+    width: 80px;
+    height: 80px;
+  }
+  .sectionXtitle h1{
+    font-size: 330% ;
+
+  }
+  .sectionXtitle h3{
+    font-size: 120% ;
+  }
+  .sectionXtitle{
+    width: 140px ;
+  }
 }
