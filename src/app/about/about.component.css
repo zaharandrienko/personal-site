@@ -53,7 +53,7 @@
   background-color: green ;
   margin: 10% ;
   margin-left: 5% ;
-  background-image: url("images/wd.png");
+  /* background-image: url("images/wd.png"); */
   background-size: cover;
   background-position: center;
 }
@@ -64,7 +64,7 @@
   border-radius: 50%;
   background-color: green ;
   margin-left: 5% ;
-  background-image: url("images/wd.png");
+  background-image: url("/assets/images/wd.png");
   background-size: cover;
   background-position: center;
   float: left;
